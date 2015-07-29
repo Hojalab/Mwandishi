@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Mwandishi by JamiiTech</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Mwandishi</h1>
+        <h2>Easy Kannel send Web Sms Interface </h2>
+
+        <section id="downloads">
+          <a href="https://github.com/JamiiTech/Mwandishi/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/JamiiTech/Mwandishi/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/JamiiTech/Mwandishi" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <p>`
+</p>
+SMS Message Sender
+
+
+
+<p>&lt;?php
+include("config.inc");
+include("functions.inc");
+if ($submit)
+{
+ echo "Sending the SMS Text message <b>\"$text\"</b> to the phone <b>$to</b>...<br>\n";
+ $URL = "/cgi-bin/sendsms?username=".USERNAME."&amp;password=".PASSWORD."&amp;from=".GLOBAL_SENDER."&amp;to=$to&amp;text=".urlencode($text);
+ http_send($URL,SENDSMS_PORT);
+ echo "</p> <a href="%5C%22%24PHP_SELF%5C%22">Back to Send SMS</a> \n";
+} else {
+?&gt;
+
+<h1>
+<a id="sms-message-sender" class="anchor" href="#sms-message-sender" aria-hidden="true"><span class="octicon octicon-link"></span></a>SMS Message Sender</h1>
+
+"&gt;
+<p>
+Telephone number:
+<br>
+
+</p>
+<p>
+Message:
+<br>
+
+</p>
+
+
+<br>
+
+
+<p>&lt;?php
+}
+?&gt;</p>
+
+<p>
+</p>
+
+<hr>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="50%"> <a href="index.html">Back to admin</a> </td>
+    <td width="50%" align="right"> Visit the Kannel homepage at <a href="http://www.kannel.org">www.kannel.org</a>. </td>
+  </tr>
+</table>
+
+<p>
+`</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
