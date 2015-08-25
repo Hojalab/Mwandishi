@@ -206,14 +206,14 @@ Webservices login
 
 Authenticate user via webservices and redirect to index.php upon authentication, successful or failed or invalid
 
-Parameters	Name or description
+Parameters	Name or description Or Usage
 Operation	ws_login
 Mandatory	u login_key
 Optional	none
 Returns	none, web redirect to index.php
 Parameter login_key is set by admin accounts through webservices call using operation loginkeyset
 
-Query
+Query To Get All The Reports Through Web Service  
 
 Query server for useful information such as user's data, user's credit, last smslog_id for inbox, incoming and outgoing SMS
 
@@ -376,4 +376,6 @@ orientsolutions webservices in orientsolutions.co.tz with operation op pv (send 
 When succeeded orientsolutions will returns OK status message in JSON format:
 
 {"data":[{"status":"OK","error":"0","smslog_id":"30","queue":"afb5f34575e30ec4efe4471cf5d1bee4","to":"0766250000"}],"error_string":null}
-{"status":"OK","error":"0","data":[{"pid":"13674","gpid":"2","p_desc":"mark francis","p_num":"0766250000","emai
+{"status":"OK","error":"0","data":[{"pid":"13674","gpid":"2","p_desc":"mark francis","p_num":"0766250000","email [{"jamiitech1@gmail.com"}]
+};
+}
